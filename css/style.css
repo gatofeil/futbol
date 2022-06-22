@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ul {
+    display: flex;
+    justify-items: center;
+    gap: 5px;
+}
