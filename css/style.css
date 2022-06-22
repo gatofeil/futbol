@@ -1,10 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.ul {
+body {
+    height: 200vh;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 83, 0.9612219887955182) 31%, rgba(0, 212, 255, 1) 100%);
+    height: 100px;
+    width: 100%;
     display: flex;
-    justify-items: center;
-    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+navbar ul li {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+navbar ul li a {
+    text-decoration: none;
+    color: rgb(236, 239, 243);
+}
+
+.logo img {
+    height: 500px;
+    width: 500px;
+    border: solid white 4px;
+}
+
+.cabeza {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-row: 800px 800px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+main {
+    height: 70vh;
+    padding: 30px;
+}
+
+main article p {
+    font-size: 40px;
+    color: rgb(8, 90, 161);
+}
+
+.contenedor {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-row: 200px 200px 200px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.contenedor-galeria img {
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+    min-width: 200px;
+    border: #b3dfdf;
+}
+
+@media only screen and (max-width:1400px) {
+    header {
+        background-color: #b3dfdf;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        background-color: #1fd34c;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        background-color: #e64a35;
+    }
 }
