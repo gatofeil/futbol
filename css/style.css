@@ -1,124 +1,147 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    height: 200vh;
-    background: rgb(63, 94, 251);
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-header {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 83, 0.9612219887955182) 31%, rgba(0, 212, 255, 1) 100%);
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-
-navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-navbar ul li {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-navbar ul li a {
-    text-decoration: none;
-    color: rgb(236, 239, 243);
-}
-
-.logo img {
-    height: 500px;
-    width: 500px;
-    border: solid white 4px;
-}
-
-.cabeza {
-    display: grid;
-    grid-template-columns: 600px 600px;
-    grid-row: 800px 800px;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 50px;
-    margin-bottom: 50px;
-}
-
-main {
-    height: 70vh;
-    padding: 30px;
-}
-
-main article p {
-    font-size: 40px;
-    color: rgb(8, 90, 161);
-}
-
-.contenedor {
-    height: 250px;
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contenedor-galeria {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.contenedor-galeria img {
-    object-fit: cover;
-    width: 30%;
-    margin-bottom: 15px;
-    border: solid white 2px;
-    margin-bottom: 50px;
-}
-
-.contenedor-profesores {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-weight: wrap;
-}
-
-.contenedor-profesores img {
-    width: 30%;
-    margin-bottom: 15px;
-    border: solid white 2px;
-    margin-bottom: 50px;
-}
-
-.row img {
-    width: 10%;
-}
-
-@media only screen and (max-width:1400px) {
-    header {
-        background-color: #b3dfdf;
-    }
-}
-
-@media only screen and (max-width:900px) {
-    header {
-        background-color: #1fd34c;
-    }
-}
-
-@media only screen and (max-width:600px) {
-    header {
-        background-color: #e64a35;
-    }
-}
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 200vh;
+            background: rgb(63, 94, 251);
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        header {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 83, 0.9612219887955182) 31%, rgba(0, 212, 255, 1) 100%);
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        
+        navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        navbar ul li {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        navbar ul li a {
+            text-decoration: none;
+            color: rgb(236, 239, 243);
+        }
+        
+        .logo img {
+            height: 500px;
+            width: 500px;
+            border: solid white 4px;
+        }
+        
+        .cabeza {
+            display: grid;
+            grid-template-columns: 600px 600px;
+            grid-row: 800px 800px;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+        
+        main {
+            height: 80vh;
+            padding: 30px;
+        }
+        
+        main article p {
+            font-size: 40px;
+            color: rgb(8, 90, 161);
+        }
+        
+        .contenedor {
+            height: 250px;
+            width: 250px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .contenedor-galeria {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        .contenedor-galeria img {
+            object-fit: cover;
+            width: 30%;
+            margin-bottom: 15px;
+            border: solid white 2px;
+            margin-bottom: 50px;
+        }
+        
+        .row {
+            padding-top: 10px;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 230px 230px 230px 230px;
+            grid-template-rows: 300px 300px 300px 300px;
+            padding-left: 20px;
+        }
+        
+        .profe {
+            display: flex;
+            justify-content: baseline;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .profe img {
+            display: grid;
+            width: 30%;
+            border: solid 4px white;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        h5 {
+            text-align: right;
+            height: 200px;
+            width: 800px;
+            padding: 30px 30px 30px 30px;
+        }
+        
+        .redes-sociales {
+            background-color: #e64a35;
+            height: 300px;
+            width: 200px;
+        }
+        
+        @media only screen and (max-width:1400px) {
+            header {
+                background-color: #b3dfdf;
+            }
+        }
+        
+        @media only screen and (max-width:900px) {
+            header {
+                background-color: #1fd34c;
+            }
+        }
+        
+        @media only screen and (max-width:600px) {
+            header {
+                background-color: #e64a35;
+            }
+        }
